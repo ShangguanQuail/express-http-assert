@@ -1,17 +1,5 @@
-# express-http-assert
-Assert middleware with http error status codes and extra message for Express.
-
-###req.assert(value[, message, opts, err])
-
-- value Bool
-- message String
-- opts Object
-- err Error
-
-this is a demo:
-
-```
 var express = require('express');
+
 var expressAssert = require('../index');
 
 var app = express();
@@ -38,13 +26,12 @@ app.use(function (err, req, res, next) {
     }
 
     res.json({
-        err: err
+        err: err || 404
     });
 });
 
-app.listen(5000, function () {
-if (err) {
+app.listen(5000, function (err) {
+    if (err) {
         console.log(err);
     }
 });
-```

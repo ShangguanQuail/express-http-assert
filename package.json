@@ -1,0 +1,41 @@
+{
+  "name": "express-http-assert",
+  "description": "http-assert for Express",
+  "version": "1.0.0",
+  "license": "MIT",
+  "keywords": [
+    "assert",
+    "http",
+    "express"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ShangguanQuail/express-http-assert.git"
+  },
+  "dependencies": {
+    "deep-equal": "~1.0.1",
+    "http-errors": "~1.6.1"
+  },
+  "files": [
+    "LICENSE",
+    "index.js"
+  ],
+  "engines": {
+    "node": ">= 0.8"
+  },
+  "scripts": {
+    "test": ""
+  },
+  "devDependencies": {
+    "express": "^4.16.2"
+  },
+  "bugs": {
+    "url": "https://github.com/ShangguanQuail/express-http-assert/issues"
+  },
+  "homepage": "https://github.com/ShangguanQuail/express-http-assert#readme",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "author": "ShangguanQuail"
+}
