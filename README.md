@@ -8,13 +8,13 @@
 
 Assert middleware with http error status codes and extra message for Express.
 
-###install
+### install
 
 ```
 npm install express-http-assert --save
 ```
 
-###req.assert(value[, message, opts, err])
+### req.assert(value[, message, opts, err])
 
 - value Bool
 - message String
