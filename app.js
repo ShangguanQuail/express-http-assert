@@ -1,9 +1,8 @@
 var express = require('express');
 
-var expressAssert = require('../index');
+var expressAssert = require('./index');
 
-var app = express();
-
+module.exports = app = express();
 app.use(expressAssert());
 
 app.post('/test', function (req, res, next) {
@@ -28,10 +27,4 @@ app.use(function (err, req, res, next) {
     res.json({
         err: err || 404
     });
-});
-
-app.listen(5000, function (err) {
-    if (err) {
-        console.log(err);
-    }
 });

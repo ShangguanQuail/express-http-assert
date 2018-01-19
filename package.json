@@ -24,10 +24,12 @@
     "node": ">= 0.8"
   },
   "scripts": {
-    "test": ""
+    "test": "ava"
   },
   "devDependencies": {
-    "express": "^4.16.2"
+    "ava": "^0.24.0",
+    "express": "^4.16.2",
+    "supertest": "^3.0.0"
   },
   "bugs": {
     "url": "https://github.com/ShangguanQuail/express-http-assert/issues"
