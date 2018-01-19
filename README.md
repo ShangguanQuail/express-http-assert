@@ -1,5 +1,18 @@
 # express-http-assert
+
+[![NPM Version][npm-image]][npm-url]
+[![NPM Downloads][downloads-image]][downloads-url]
+[![Node.js Version][node-version-image]][node-version-url]
+[![Build Status][travis-image]][travis-url]
+[![Test Coverage][coveralls-image]][coveralls-url]
+
 Assert middleware with http error status codes and extra message for Express.
+
+###install
+
+```
+npm install express-http-assert --save
+```
 
 ###req.assert(value[, message, opts, err])
 
@@ -12,7 +25,7 @@ this is a demo:
 
 ```
 var express = require('express');
-var expressAssert = require('../index');
+var expressAssert = require('express-http-assert');
 
 var app = express();
 
@@ -48,3 +61,18 @@ if (err) {
     }
 });
 ```
+
+## Licence
+
+[MIT](LICENSE)
+
+[npm-image]: https://img.shields.io/npm/v/express-http-assert.svg
+[npm-url]: https://npmjs.org/package/express-http-assert
+[node-version-image]: https://img.shields.io/node/v/express-http-assert.svg
+[node-version-url]: https://nodejs.org/en/download/
+[travis-image]: https://img.shields.io/travis/jshttp/express-http-assert/master.svg
+[travis-url]: https://travis-ci.org/jshttp/express-http-assert
+[coveralls-image]: https://img.shields.io/coveralls/jshttp/express-http-assert/master.svg
+[coveralls-url]: https://coveralls.io/r/jshttp/express-http-assert
+[downloads-image]: https://img.shields.io/npm/dm/express-http-assert.svg
+[downloads-url]: https://npmjs.org/package/express-http-assert
