@@ -5,12 +5,12 @@ module.exports = expressAssert;
 
 function expressAssert() {
     return function (req, res, next) {
-        function assert(value, msg, opts, err) {
+        function assert(value, status, msg, opts, err) {
             if (value) return;
             if (err instanceof Error) {
                 opts.error = err;
             }
-            throw createError(500, msg, opts);
+            throw createError(status, msg, opts);
         }
 
         assert.equal = function (a, b, status, msg, opts, err) {
